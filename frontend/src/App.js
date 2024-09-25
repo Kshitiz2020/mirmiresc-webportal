@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header className="App-header">
-      <img src="path_to_logo/logo.png" className="App-logo" alt="Mirmire SC Logo" />
+      <img src="/mirmire_logo.png" className="App-logo" alt="Mirmire SC Logo" />
       <div className="hamburger" onClick={toggleMenu}>
         &#9776;  {/* Hamburger Icon */}
       </div>
