@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "mirmire.fi"
+        }
+      ],
+      "destination": "https://www.mirmire.fi/$1",
+      "permanent": true
+    }
+  ]
+}
