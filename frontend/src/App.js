@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,6 +30,7 @@ function Header() {
 
 function App() {
   return (
+    <>
     <div className="App">
       <Header />
 
@@ -84,6 +85,14 @@ function App() {
         ></iframe>
       </body>
     </div>
+    <Router>
+      <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="*" element={<PageNotFound/>}/>
+      </Routes>
+    </Router>
+    </>
   );
 }
 

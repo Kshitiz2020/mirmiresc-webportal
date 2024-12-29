@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Button() {
+function Home() {
   return (
     <div>
+      loading
       
     </div>
   )
 }
 
-export default Button
+export default Home
